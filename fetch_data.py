@@ -2,7 +2,7 @@ from web3 import Web3, HTTPProvider, IPCProvider
 from tqdm import tqdm
 import pandas as pd
 
-from config import CONN, ADDRESS, FILENAME
+from config import CONN, ADDRESS, FILENAME, IPC_FILE
 
 
 def fetch_data(conn):
@@ -37,7 +37,7 @@ def initialize_headers(headers):
 
 if __name__ == '__main__':
     if CONN='IPCProvider'
-        conn = IPCProvider()
+        conn = IPCProvider(IPC_FILE)
     elif CONN='HTTPProvider':
         conn = HTTPProvider(ADDRESS)
     else:
