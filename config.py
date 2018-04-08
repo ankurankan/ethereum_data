@@ -2,10 +2,10 @@
 CONN = 'IPCProvider'
 
 # If CONN='HTTPProvider', address of the node
-ADDRESS = None
+HTTP_ADDRESS = None
 
 # If CONN='IPCProvider', address of the IPC file
-ADDRESS = '/home/ankur_gcloud/ssd/.ethereum/geth.ipc'
+IPC_ADDRESS = '/home/ankur_gcloud/ssd/.ethereum/geth.ipc'
 
 # File name where to store the data
-FILENAME = 'blockchain.csv'
+FILENAME = '/home/ankur_gcloud/blockchain.csv'
